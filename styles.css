@@ -476,12 +476,19 @@ main,
 }
 
 .contact-wrap {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: end;
-  justify-content: space-between;
   gap: 28px;
   padding-bottom: 60px;
   border-bottom: 1px solid var(--line);
+}
+
+.contact h2 {
+  max-width: none;
+  justify-self: center;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .contact h2 span {
@@ -565,6 +572,10 @@ main,
 
   .contact-wrap {
     align-items: flex-start;
+  }
+
+  .contact h2 {
+    white-space: normal;
   }
 
   .contact-links {
