@@ -10,6 +10,8 @@
   --line: rgba(255, 255, 255, 0.09);
   --primary: #8d7dff;
   --primary-strong: #6f5af5;
+  --accent: #f7f7fb;
+  --warm: #f7f7fb;
   --shadow: rgba(10, 13, 21, 0.35);
 }
 
@@ -133,8 +135,19 @@ main,
 }
 
 .eyebrow {
-  margin: 0 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 28px;
   color: var(--accent);
+}
+
+.eyebrow::before {
+  width: 34px;
+  height: 1px;
+  background: currentColor;
+  content: "";
+  opacity: 0.85;
 }
 
 .hero h1 {
