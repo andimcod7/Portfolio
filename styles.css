@@ -249,6 +249,7 @@ main,
 .glow {
   position: absolute;
   border-radius: 50%;
+  background: rgba(141, 125, 255, 0.45);
   filter: blur(12px);
   opacity: 0.8;
 }
@@ -256,7 +257,6 @@ main,
 .glow-one {
   width: 260px;
   height: 260px;
-  background: rgba(141, 125, 255, 0.45);
   top: 40px;
   right: 120px;
 }
@@ -264,7 +264,6 @@ main,
 .glow-two {
   width: 200px;
   height: 200px;
-  background: rgba(141, 125, 255, 0.45);
   bottom: 48px;
   left: 25px;
 }
